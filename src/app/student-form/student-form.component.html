@@ -1,0 +1,21 @@
+<div class = "form">
+<h1 style = color:blue>Student Form</h1>
+<div class = "details">
+<p>Name of the student:</p>
+<input type = "text" placeholder="Name of the student"
+ [(ngModel)]="studentName" /></div>
+ <div class = "details">
+<p>subject:</p>
+<input type = "text"placeholder="Subject"
+ [(ngModel)]="subject" />
+ </div>
+ <div class = "details">
+<p>Test score 1:</p>
+<input type = "number"placeholder ="score 1"
+ [(ngModel)]="testScore1" /></div>
+ <div class = "details">
+<p>Test score 2:</p>
+<input type = "text" placeholder=" Text score 2" [(ngModel)]="testScore2" /></div>
+<button (click)="showscore()" style="color: black; background-color: green;">Submit</button>
+<p *ngIf ="message">{{finalMessage}}</p>
+</div>

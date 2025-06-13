@@ -1,19 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
+import { ProductsComponent } from './products/products.component';
+import { ProductCartComponent } from './product-cart/product-cart.component';
+import { StudentFormComponent } from './student-form/student-form.component';
+import { StyleDirective} from './style.directive'; // Corrected import statement;
 
  
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,ProductsComponent,ProductCartComponent,StudentFormComponent,StyleDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  van=false;
-  name:string = "Angular App";
-  x: number = 10;
-  y: number = 20;
-  username = 'll';
-}
+
+  }
+  
